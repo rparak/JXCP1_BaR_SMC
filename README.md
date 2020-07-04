@@ -51,8 +51,16 @@ Link: https://www.smcusa.com/products/electric-actuators/controllers-drivers/24v
 
 **MappView:**
 
-IP Address (Simulation/Real HW): http://localhost:81/index.html?visuId=jxcp_profinet or http://PLC_ADDRESS:81/index.html?visuId=jxcp_profinet
+IP Address (Simulation/Real HW): 
+
+http://localhost:81/index.html?visuId=jxcp_profinet or http://PLC_ADDRESS:81/index.html?visuId=jxcp_profinet
 
 <p align="center">
 <img src="https://github.com/rparak/JXCP1_BR_SMC/blob/master/images/mv.png" width="700" height="350">
 </p>
+
+## Contact Info:
+Roman.Parak@outlook.com
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
