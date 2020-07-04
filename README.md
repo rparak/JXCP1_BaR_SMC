@@ -11,7 +11,9 @@ SMC (JXCP1) Driver for Windows 10
 Link AS B&R: https://www.br-automation.com/en/downloads/ 
 
 Driver for Windows 10:
+
 Link: https://www.smcworld.com/products/pickup/en-jp/electric_actuator/download.html
+
 Repositary: /JXCP1_BR_SMC/Driver_for_Windows10/
 
 **24VDC Fieldbus – JXC*1**
