@@ -34,7 +34,7 @@ Link: https://www.smcusa.com/products/electric-actuators/controllers-drivers/24v
 **AS Project Runtime Version:**
 
 <p align="center">
-<img src="https://github.com/rparak/JXCP1_BR_SMC/blob/master/images/Version.PNG" width="765" height="1066">
+<img src="https://github.com/rparak/JXCP1_BR_SMC/blob/master/images/Version.PNG" width="382" height="533">
 </p>
 
 **Wiring Diagram:**
@@ -46,7 +46,7 @@ Link: https://www.smcusa.com/products/electric-actuators/controllers-drivers/24v
 **Project Structure (Logical View):**
 
 <p align="center">
-<img src="https://github.com/rparak/JXCP1_BR_SMC/blob/master/images/LV.PNG" width="700" height="350">
+<img src="https://github.com/rparak/JXCP1_BR_SMC/blob/master/images/LV.PNG" width="382" height="533">
 </p>
 
 **MappView:**
