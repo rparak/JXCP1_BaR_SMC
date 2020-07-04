@@ -40,7 +40,7 @@ Link: https://www.smcusa.com/products/electric-actuators/controllers-drivers/24v
 **Wiring Diagram:**
 
 <p align="center">
-<img src="https://github.com/rparak/JXCP1_BR_SMC/blob/master/images/wiring_diagram.PNG" width="680" height="500">
+<img src="https://github.com/rparak/JXCP1_BR_SMC/blob/master/images/wiring_diagram.PNG" width="550" height="400">
 </p>
 
 **Project Structure (Logical View):**
