@@ -31,3 +31,26 @@ Link: https://www.smcusa.com/products/electric-actuators/controllers-drivers/24v
 [ AS Test Real-HW    ] /Logical/Technology/JXCP_Test/
 [ AS MappView        ] /Logical/mappView/
 ```
+**AS Project Runtime Version:**
+
+<p align="center">
+<img src="https://github.com/rparak/JXCP1_BR_SMC/blob/master/images/Version.PNG" width="700" height="350">
+</p>
+
+**Wiring Diagram:**
+
+<p align="center">
+<img src="https://github.com/rparak/JXCP1_BR_SMC/blob/master/images/wiring_diagram.PNG" width="700" height="350">
+</p>
+
+**Project Structure (Logical View):**
+
+<p align="center">
+<img src="https://github.com/rparak/JXCP1_BR_SMC/blob/master/images/LV.PNG" width="700" height="350">
+</p>
+
+**MappView:**
+
+<p align="center">
+<img src="https://github.com/rparak/JXCP1_BR_SMC/blob/master/images/mv.png" width="700" height="350">
+</p>
