@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="NavigationContent" height="100" width="1920" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle2" top="5" left="1560" width="350" height="90" zIndex="0" borderStyle="none" cornerRadius="10px" backColor="rgba(47, 111, 139, 1)" opacity="1" />
+    <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput1" top="15" left="1680" width="280" zIndex="1" format="HH:mm:ss" textColor="rgba(255, 255, 255, 1)" textAlign="center" opacity="0.8" fontSize="28px" />
+    <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput2" top="60" left="1680" width="280" height="25" zIndex="2" format="dd. MM. yyyy" textColor="rgba(255, 255, 255, 1)" textAlign="center" opacity="0.8" fontSize="28px" />
+    <Widget xsi:type="widgets.brease.Image" id="Image2" top="25" left="1620" width="50" height="50" zIndex="3" image="Media/SVGsymbols/Alarm/Alarm.svg" opacity="0.8" imageColor="rgba(255, 255, 0, 1)" />
+    <Widget xsi:type="widgets.brease.Ellipse" id="Ellipse4" top="15" left="1675" width="40" height="40" zIndex="4" borderWidth="4px" lineColor="rgba(255, 255, 0, 1)" backColor="rgba(255, 255, 255, 1)" opacity="0.8" />
+    <Widget xsi:type="widgets.brease.Image" id="Image3" top="15" left="250" width="385" height="80" zIndex="5" image="Media/Image/UAI_color_RGB_EN.png" opacity="0.6" imageColor="rgba(250, 128, 114, 1)" />
+    <Widget xsi:type="widgets.brease.Image" id="Image4" top="10" left="1260" width="160" height="80" zIndex="6" image="Media/Image/br.png" opacity="0.6" imageColor="rgba(250, 128, 114, 1)" />
+    <Widget xsi:type="widgets.brease.Image" id="Image5" top="-22" left="800" width="260" height="150" zIndex="7" image="Media/Image/smc.png" opacity="0.6" imageColor="rgba(250, 128, 114, 1)" />
+    <Widget xsi:type="widgets.brease.Rectangle" id="Rectangle1" top="0" left="0" width="1920" height="99" zIndex="8" cornerRadius="5px" lineColor="rgba(130, 168, 185, 1)" backColor="rgba(255, 255, 255, 0)" opacity="0.2" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput19" top="25" left="1665" width="50" height="20" zIndex="9" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" maxValue="4" borderWidth="0px" cornerRadius="0px" backColor="rgba(255, 255, 255, 0)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(47, 111, 139, 1)" textAlign="center" opacity="1" />
+  </Widgets>
+</Content>

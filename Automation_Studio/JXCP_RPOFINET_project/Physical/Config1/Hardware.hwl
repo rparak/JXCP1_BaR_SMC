@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BR.AS.HardwareTopology Version="0.0.0.1">
+  <TimeStamps>
+    <TimeStamp LogicalPath="Config1.Hardware.hw" LastWriteTime="05/04/2020 13:57:07" />
+  </TimeStamps>
+  <Modules>
+    <Module Name="X20CP1382" Type="X20CP1382" X="100" Y="100" />
+    <Module Name="X3" Type="X3" X="251" Y="103" />
+    <Module Name="X20TB1F2" Type="X20TB1F" X="251" Y="126" />
+    <Module Name="X2" Type="X2" X="238" Y="103" />
+    <Module Name="X20TB1F1" Type="X20TB1F" X="238" Y="126" />
+    <Module Name="X1" Type="X1" X="225" Y="103" />
+    <Module Name="X20TB1F" Type="X20TB1F" X="225" Y="126" />
+    <Module Name="X20BB81" Type="X20BB81" X="469" Y="327" />
+    <Module Name="X20IF10E1_1" Type="X20IF10E1-1" X="469" Y="327" />
+    <Module Name="X20PS9400a" Type="X20PS9400" X="519" Y="327" />
+    <Module Name="X20TB12e" Type="X20TB12" X="519" Y="354" />
+    <Module Name="X20BC1083" Type="X20BC1083" X="494" Y="327" />
+    <Module Name="JXCP1" Type="FBD.Hilscher.PNIOGenDevDTM2.JXCP1" X="532" Y="476" />
+  </Modules>
+  <Links>
+    <Link From="JXCP1" To="X20IF10E1_1" FromPort="PN1" ToPort="IF1" IsRoutedByUser="False">
+      <Point X="551.5" Y="515.5" />
+      <Point X="551.5" Y="515.5" />
+      <Point X="551.5" Y="527.5" />
+      <Point X="551.5" Y="535" />
+      <Point X="483.5" Y="535" />
+      <Point X="483.5" Y="427.5" />
+      <Point X="483.5" Y="418.5" />
+      <Point X="483.5" Y="418.5" />
+    </Link>
+    <Link From="X20BC1083" To="X20CP1382" FromPort="PLK1" ToPort="IF3" IsRoutedByUser="False">
+      <Point X="508.5" Y="402.5" />
+      <Point X="500.25" Y="402.5" />
+      <Point X="500.25" Y="427.5" />
+      <Point X="500.25" Y="435" />
+      <Point X="153" Y="435" />
+      <Point X="153" Y="203" />
+      <Point X="153" Y="188" />
+      <Point X="153" Y="188" />
+    </Link>
+  </Links>
+  <InfoElements />
+</BR.AS.HardwareTopology>
