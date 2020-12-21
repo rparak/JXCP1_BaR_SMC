@@ -34,19 +34,19 @@ Link: https://www.smcusa.com/products/electric-actuators/controllers-drivers/24v
 **AS Project Runtime Version:**
 
 <p align="center">
-<img src="https://github.com/rparak/JXCP1_BR_SMC/blob/master/images/Version.PNG" width="382" height="533">
+<img src="https://github.com/rparak/JXCP1_BR_SMC/blob/master/images/Version.PNG" width="300" height="400">
 </p>
 
 **Wiring Diagram:**
 
 <p align="center">
-<img src="https://github.com/rparak/JXCP1_BR_SMC/blob/master/images/wiring_diagram.PNG" width="550" height="400">
+<img src="https://github.com/rparak/JXCP1_BR_SMC/blob/master/images/wiring_diagram.PNG" width="500" height="300">
 </p>
 
 **Project Structure (Logical View):**
 
 <p align="center">
-<img src="https://github.com/rparak/JXCP1_BR_SMC/blob/master/images/LV.PNG" width="382" height="533">
+<img src="https://github.com/rparak/JXCP1_BR_SMC/blob/master/images/LV.PNG" width="300" height="400">
 </p>
 
 **MappView:**
@@ -56,7 +56,7 @@ IP Address (Simulation/Real HW):
 http://localhost:81/index.html?visuId=jxcp_profinet or http://PLC_ADDRESS:81/index.html?visuId=jxcp_profinet
 
 <p align="center">
-<img src="https://github.com/rparak/JXCP1_BR_SMC/blob/master/images/mv.png" width="800" height="450">
+<img src="https://github.com/rparak/JXCP1_BR_SMC/blob/master/images/mv.png" width="550" height="300">
 </p>
 
 ## Contact Info:
