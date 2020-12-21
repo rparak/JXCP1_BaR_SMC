@@ -59,21 +59,6 @@ http://localhost:81/index.html?visuId=jxcp_profinet or http://PLC_ADDRESS:81/ind
 <img src="https://github.com/rparak/JXCP1_BR_SMC/blob/master/images/mv.png" width="800" height="450">
 </p>
 
-## Additional information:
-
-**MappTechnology:**
-
-Link: https://www.br-automation.com/en/products/software/mapp-technology/
-Link: https://www.youtube.com/watch?v=poufs5F3xB8
-
-**B&R Automation - Free Webinars (CZ):**
-
-Link: https://www.br-automation.com/cs/akademie/webinare/
-
-**B&R Automation - Academy:**
-
-Link: https://www.br-automation.com/en/academy/dates-and-registration/
-
 ## Contact Info:
 Roman.Parak@outlook.com
 
