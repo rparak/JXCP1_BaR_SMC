@@ -56,7 +56,7 @@ IP Address (Simulation/Real HW):
 http://localhost:81/index.html?visuId=jxcp_profinet or http://PLC_ADDRESS:81/index.html?visuId=jxcp_profinet
 
 <p align="center">
-<img src="https://github.com/rparak/JXCP1_BR_SMC/blob/master/images/mv.png" width="550" height="300">
+<img src="https://github.com/rparak/JXCP1_BR_SMC/blob/master/images/mv.png" width="800" height="500">
 </p>
 
 ## Contact Info:
