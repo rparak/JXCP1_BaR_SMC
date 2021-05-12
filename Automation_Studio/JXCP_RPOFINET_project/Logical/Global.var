@@ -1,0 +1,3 @@
+VAR
+	jxcp_data_mv : jxcp_data_mv_str;
+END_VAR

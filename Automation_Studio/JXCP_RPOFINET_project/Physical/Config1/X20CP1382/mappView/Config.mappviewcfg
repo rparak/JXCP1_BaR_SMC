@@ -6,7 +6,7 @@
         <Property ID="WebServerPort" Value="81" />
       </Selector>
       <Property ID="MaxClientConnections" Value="5" />
-      <Property ID="MaxBRClientConnections" Value="5" />
+      <Property ID="MaxBRClientConnections" Value="1" />
       <Selector ID="ClientConnectionsLicensingMode" Value="LicensingModeConfiguredMaxClients" />
       <Group ID="TcpProxyConf">
         <Selector ID="InsecureMode" Value="1" />
@@ -31,6 +31,9 @@
         <Property ID="preserveOldValues" Value="TRUE" />
       </Group>
       <Property ID="defaultVisu" Value="" />
+      <Group ID="Widget">
+        <Selector ID="renderingPolicy" Value="1" />
+      </Group>
     </Group>
   </Element>
 </Configuration>

@@ -1,5 +1,138 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BindingsSet id="binding_0" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Bindings>
-  </Bindings>
+	<Bindings>
+	<!--< ========================= INITIALIZATION PANEL ========================= />-->
+	 <Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.Power" attribute="value" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="ToggleSwitch1" attribute="value" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.Home" attribute="value" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="MomentaryPushButton4" attribute="value" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.PowerOn" attribute="value" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="ImageList15" attribute="selectedIndex" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.isHome" attribute="value" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="ImageList16" attribute="selectedIndex" />
+	</Binding>
+	<!--< ========================= CONTROL PANEL ========================= />-->
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.Control.Jog_neg" attribute="value" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="MomentaryPushButton6" attribute="value" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.Control.Jog_pos" attribute="value" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="MomentaryPushButton7" attribute="value" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.Control.Cycle_Mode.Default_Param" attribute="value" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="MomentaryPushButton9" attribute="value" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.Control.Cycle_Mode.Stop" attribute="value" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="MomentaryPushButton10" attribute="value" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.Control.Cycle_Mode.Start" attribute="value" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="MomentaryPushButton8" attribute="value" />
+	</Binding>
+	<!--< ========================= ALARM PANEL ========================= />-->
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.Alarm.Alarm_1" attribute="value" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="NumericOutput22" attribute="value" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.Alarm.Alarm_2" attribute="value" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="NumericOutput24" attribute="value" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.Alarm.Alarm_3" attribute="value" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="NumericOutput23" attribute="value" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.Alarm.Alarm_4" attribute="value" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="NumericOutput25" attribute="value" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.Alarm.Alarm_1_img" attribute="value" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="ImageList10" attribute="selectedIndex" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.Alarm.Alarm_2_img" attribute="value" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="ImageList13" attribute="selectedIndex" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.Alarm.Alarm_3_img" attribute="value" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="ImageList12" attribute="selectedIndex" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.Alarm.Alarm_4_img" attribute="value" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="ImageList11" attribute="selectedIndex" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.Reset_Alarm" attribute="value" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="MomentaryPushButton5" attribute="value" />
+	</Binding>
+	<!--< ========================= CYCLE MOVE PANEL ========================= />-->
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.Write_Parameters.Speed" attribute="node" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="NumericInput12" attribute="node" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.Write_Parameters.Position" attribute="node" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="NumericInput11" attribute="node" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.Write_Parameters.Deceleration" attribute="node" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="NumericInput14" attribute="node" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.Write_Parameters.Acceleration" attribute="node" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="NumericInput13" attribute="node" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.Read_Parameters.In_Pos" attribute="value" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="ImageList14" attribute="selectedIndex" />
+	</Binding>
+	<!--< ========================= GRAPH PANEL ========================= />-->	
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.Read_Parameters.Force" attribute="value" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="RadialGauge5" attribute="value" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.Read_Parameters.Force" attribute="value" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="NumericOutput21" attribute="value" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.Read_Parameters.Force" attribute="value" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="OnlineChartGraph5" attribute="value" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.Read_Parameters.Position" attribute="node" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="RadialGauge3" attribute="node" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.Read_Parameters.Position" attribute="node" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="OnlineChartGraph3" attribute="node" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.Read_Parameters.Position" attribute="node" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="NumericOutput19" attribute="node" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.Read_Parameters.Speed" attribute="node" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="OnlineChartGraph4" attribute="node" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.Read_Parameters.Speed" attribute="node" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="NumericOutput20" attribute="node" />
+	</Binding>
+	<Binding mode="twoWay">
+		<Source xsi:type="opcUa" refId="::AsGlobalPV:jxcp_data_mv.Read_Parameters.Speed" attribute="node" />
+		<Target xsi:type="brease" contentRefId="HomePageContent" widgetRefId="RadialGauge4" attribute="node" />
+	</Binding>
+</Bindings>
 </BindingsSet>

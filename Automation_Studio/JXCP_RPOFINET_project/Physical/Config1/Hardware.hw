@@ -1,27 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<?AutomationStudio Version=4.7.2.98?>
+<?AutomationStudio Version=4.9.3.144 FileVersion="4.9"?>
 <Hardware xmlns="http://br-automation.co.at/AS/Hardware">
-  <Module Name="JXCP1" Type="FBD.Hilscher.PNIOGenDevDTM2.JXCP1" Version="0.0.0.0" OrderNumber="JXCP1" VendorAddress="jxcp">
+  <Module Name="JXCP1" Type="FBD.Hilscher.PNIOGenDevDTM2.JXCP1" Version="0.0.0.0" OrderNumber="JXCP1" VendorAddress="jxcp1">
     <Connection Connector="PN1" TargetModule="X20IF10E1_1" TargetConnector="IF1" />
     <Parameter ID="DtmId" Value="32d02dca-1395-427b-a27d-d5b2f34042f0" />
   </Module>
   <Module Name="X20BB81" Type="X20BB81" Version="1.0.2.0" />
-  <Module Name="X20BC1083" Type="X20BC1083" Version="2.9.0.0">
+  <Module Name="X20BC1083" Type="X20BC1083" Version="2.11.1.0">
     <Connection Connector="PLK1" TargetModule="X20CP1382" TargetConnector="IF3">
-      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.2" />
+      <Cable Type="PowerlinkCable" Length="10" Version="1.0.0.3" />
     </Connection>
     <Connection Connector="SL" TargetModule="X20BB81" TargetConnector="SL1" />
   </Module>
-  <Module Name="X20CP1382" Type="X20CP1382" Version="1.8.0.0">
-    <Module Name="X1" Type="X1" Virtual="true" Version="1.8.0.0">
+  <Module Name="X20CP1382" Type="X20CP1382" Version="1.11.0.0">
+    <Module Name="X1" Type="X1" Virtual="true" Version="1.11.0.0">
       <Connection Connector="SS1" TargetModule="X20TB1F" TargetConnector="SS" />
       <Connection Connector="SL" TargetModule="X20CP1382" TargetConnector="X1" />
     </Module>
-    <Module Name="X2" Type="X2" Virtual="true" Version="1.8.0.0">
+    <Module Name="X2" Type="X2" Virtual="true" Version="1.11.0.0">
       <Connection Connector="SS1" TargetModule="X20TB1F1" TargetConnector="SS" />
       <Connection Connector="SL" TargetModule="X20CP1382" TargetConnector="X2" />
     </Module>
-    <Module Name="X3" Type="X3" Virtual="true" Version="1.8.0.0">
+    <Module Name="X3" Type="X3" Virtual="true" Version="1.11.0.0">
       <Connection Connector="SS1" TargetModule="X20TB1F2" TargetConnector="SS" />
       <Connection Connector="SL" TargetModule="X20CP1382" TargetConnector="X3" />
     </Module>
@@ -31,7 +31,10 @@
     <Connector Name="IF2">
       <Parameter ID="ActivateDevice" Value="1" />
     </Connector>
-    <Parameter ID="ConfigurationID" Value="YuMiLAB_project_Config1" />
+    <Connector Name="IF3">
+      <Parameter ID="DNAConfiguration" Value="manual" />
+    </Connector>
+    <Parameter ID="ConfigurationID" Value="JXCP_PROFINET_project_Config1" />
     <Parameter ID="Simulation" Value="1" />
     <Parameter ID="SystemTick" Value="2000" />
     <Parameter ID="TaskClassIdleTime" Value="2000" />
@@ -52,7 +55,7 @@
     <Parameter ID="ConfigModule" Value="asnxdb1" />
     <Parameter ID="CycleTime" Value="2000" />
   </Module>
-  <Module Name="X20PS9400a" Type="X20PS9400" Version="1.0.2.4">
+  <Module Name="X20PS9400a" Type="X20PS9400" Version="1.4.0.0">
     <Connection Connector="SS1" TargetModule="X20TB12e" TargetConnector="SS" />
     <Connection Connector="PS" TargetModule="X20BB81" TargetConnector="PS1" />
   </Module>

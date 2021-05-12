@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<BR.AS.HardwareTopology Version="0.0.0.1">
+<?AutomationStudio FileVersion="4.9"?>
+<BR.AS.HardwareTopology>
   <TimeStamps>
-    <TimeStamp LogicalPath="Config1.Hardware.hw" LastWriteTime="05/04/2020 13:57:07" />
+    <TimeStamp LogicalPath="Config1.Hardware.hw" LastWriteTime="05/11/2021 13:08:55" />
   </TimeStamps>
   <Modules>
     <Module Name="X20CP1382" Type="X20CP1382" X="100" Y="100" />

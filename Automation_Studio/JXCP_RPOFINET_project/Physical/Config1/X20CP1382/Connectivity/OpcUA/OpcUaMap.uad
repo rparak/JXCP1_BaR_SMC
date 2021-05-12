@@ -1,12 +1,78 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<OpcUaSource FileVersion="7" ArVersion="C4.72">
+<OpcUaSource FileVersion="7" ArVersion="A4.73">
   <Aliases>
     <ACLAliases />
     <EURangeViolationAliases />
-    <EURangesAliases />
+    <EURangesAliases>
+      <EURanges Id="5">
+        <EURange>
+          <Low ValueProvider="PV">::JXCP_Test:jxcp_smc_fb_1.Set_Parameters.Boundary.Position.min</Low>
+          <High ValueProvider="PV">::JXCP_Test:jxcp_smc_fb_1.Set_Parameters.Boundary.Position.max</High>
+        </EURange>
+      </EURanges>
+      <EURanges Id="6">
+        <EURange>
+          <Low ValueProvider="PV">::JXCP_Test:jxcp_smc_fb_1.Set_Parameters.Boundary.Speed.min</Low>
+          <High ValueProvider="PV">::JXCP_Test:jxcp_smc_fb_1.Set_Parameters.Boundary.Speed.max</High>
+        </EURange>
+      </EURanges>
+      <EURanges Id="7">
+        <EURange>
+          <Low ValueProvider="PV">::JXCP_Test:jxcp_smc_fb_1.Set_Parameters.Boundary.Acceleration.min</Low>
+          <High ValueProvider="PV">::JXCP_Test:jxcp_smc_fb_1.Set_Parameters.Boundary.Acceleration.max</High>
+        </EURange>
+      </EURanges>
+      <EURanges Id="8">
+        <EURange>
+          <Low ValueProvider="PV">::JXCP_Test:jxcp_smc_fb_1.Set_Parameters.Boundary.Deceleration.min</Low>
+          <High ValueProvider="PV">::JXCP_Test:jxcp_smc_fb_1.Set_Parameters.Boundary.Deceleration.max</High>
+        </EURange>
+      </EURanges>
+    </EURangesAliases>
     <EngineeringUnitAliases />
   </Aliases>
   <DefaultView>
-    <Module Name="&lt;Default&gt;" />
+    <Module Name="&lt;Default&gt;">
+      <GlobalVariables Name="Global Variables">
+        <Variable Name="jxcp_data_mv">
+          <Variable Name="Power" />
+          <Variable Name="Home" />
+          <Variable Name="isHome" />
+          <Variable Name="PowerOn" />
+          <Variable Name="Control">
+            <Variable Name="Jog_pos" />
+            <Variable Name="Jog_neg" />
+            <Variable Name="Cycle_Mode">
+              <Variable Name="Start" />
+              <Variable Name="Stop" />
+              <Variable Name="Default_Param" />
+            </Variable>
+          </Variable>
+          <Variable Name="Write_Parameters">
+            <Variable Name="Position" EURangesId="5" />
+            <Variable Name="Speed" EURangesId="6" />
+            <Variable Name="Acceleration" EURangesId="7" />
+            <Variable Name="Deceleration" EURangesId="8" />
+          </Variable>
+          <Variable Name="Read_Parameters">
+            <Variable Name="Position" EURangesId="5" />
+            <Variable Name="Speed" EURangesId="6" />
+            <Variable Name="Force" />
+            <Variable Name="In_Pos" />
+          </Variable>
+          <Variable Name="Alarm">
+            <Variable Name="Alarm_1" />
+            <Variable Name="Alarm_1_img" />
+            <Variable Name="Alarm_2" />
+            <Variable Name="Alarm_2_img" />
+            <Variable Name="Alarm_3" />
+            <Variable Name="Alarm_3_img" />
+            <Variable Name="Alarm_4" />
+            <Variable Name="Alarm_4_img" />
+          </Variable>
+          <Variable Name="Reset_Alarm" />
+        </Variable>
+      </GlobalVariables>
+    </Module>
   </DefaultView>
 </OpcUaSource>
