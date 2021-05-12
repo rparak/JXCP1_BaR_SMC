@@ -25,15 +25,13 @@ TYPE
 		(
 		JXCP_INITIALIZATION_STATE := 0,
 		JXCP_WAIT_STATE := 10,
-		JXCP_NORMAL_MODE_STATE := 20,
-		JXCP_CYCLE_MODE_STATE := 30,
-		JXCP_ALARM_MODE_STATE := 40,
-		JXCP_ERROR_MODE_STATE := 50
+		JXCP_CYCLE_MODE_STATE := 20,
+		JXCP_ALARM_MODE_STATE := 30,
+		JXCP_ERROR_MODE_STATE := 40
 		);
 	set_param_mode_enum : 
 		(
-		NORMAL_MOVE_MODE := 0,
-		CYCLE_MOVE_MODE := 1
+		CYCLE_MOVE_MODE := 0
 		);
 	internal_param_str : 	STRUCT 
 		actual_state : jxcp_main_enum;
@@ -46,6 +44,7 @@ TYPE
 		Start : BOOL;
 		Stop : BOOL;
 		Mode : set_param_mode_enum;
+		Boundary : boundary_str;
 	END_STRUCT;
 	byte_3_in_str : 	STRUCT 
 		Deceleration : BOOL;
@@ -147,5 +146,15 @@ TYPE
 	END_STRUCT;
 	profinet_mapping_in_str : 	STRUCT 
 		Input_Area : ARRAY[0..19]OF USINT;
+	END_STRUCT;
+	boundary_mm_str : 	STRUCT 
+		max : LREAL;
+		min : LREAL;
+	END_STRUCT;
+	boundary_str : 	STRUCT 
+		Position : boundary_mm_str;
+		Speed : boundary_mm_str;
+		Acceleration : boundary_mm_str;
+		Deceleration : boundary_mm_str;
 	END_STRUCT;
 END_TYPE

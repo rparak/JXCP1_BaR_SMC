@@ -12,7 +12,7 @@ FUNCTION_BLOCK dec_to_multiple_usint
 	END_VAR
 END_FUNCTION_BLOCK
 
-FUNCTION_BLOCK multiplne_usint_to_dec
+FUNCTION_BLOCK multiple_usint_to_dec
 	VAR_INPUT
 		Count_of_VAR : USINT;
 		USINT_1 : USINT;
