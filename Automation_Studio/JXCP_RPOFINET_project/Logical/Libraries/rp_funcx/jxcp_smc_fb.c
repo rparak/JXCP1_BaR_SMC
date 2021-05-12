@@ -91,10 +91,7 @@ void jxcp_smc_fb(struct jxcp_smc_fb* jxcp_s)
 				
 				// *************** Start Mode *************** //
 				if(jxcp_s->Set_Parameters.Start == 1){
-					if(jxcp_s->Set_Parameters.Mode == NORMAL_MOVE_MODE){
-						// Normal Mode
-						jxcp_s->Internal.actual_state = JXCP_NORMAL_MODE_STATE;
-					}else if(jxcp_s->Set_Parameters.Mode == CYCLE_MOVE_MODE){
+					if(jxcp_s->Set_Parameters.Mode == CYCLE_MOVE_MODE){
 						// Write Byte 2 { SET - 1 }
 						jxcp_s->Input.BYTE_2.Speed_Restriction = 1;
 						jxcp_s->Input.BYTE_2.Movement_Mode     = 1;
@@ -113,27 +110,6 @@ void jxcp_smc_fb(struct jxcp_smc_fb* jxcp_s)
 						// Cycle Mode
 						jxcp_s->Internal.actual_state = JXCP_CYCLE_MODE_STATE;
 					}
-				}
-				
-				// Module OK = 0 -> Error State
-				if(jxcp_s->ModuleOK != 1){
-					// Set FB -> Active 0
-					jxcp_s->Active = 0;
-					// Change State -> Error
-					jxcp_s->Internal.actual_state = JXCP_ERROR_MODE_STATE;
-				}
-			}
-			break;
-		case JXCP_NORMAL_MODE_STATE:
-			{
-				/*************************************** NORMAL MODE STATE ******************************************/
-				jxcp_s->Internal.before_state = JXCP_NORMAL_MODE_STATE;
-				
-				// *************** Stop Actual Mode *************** //
-				if(jxcp_s->Set_Parameters.Stop == 1){
-					jxcp_s->Set_Parameters.Start = 0;
-					// Change State -> Initialization
-					jxcp_s->Internal.actual_state = JXCP_WAIT_STATE;
 				}
 				
 				// Module OK = 0 -> Error State
@@ -673,7 +649,7 @@ void initialization_jxcp(struct jxcp_smc_fb* jxcp_s)
 	jxcp_s->Internal.before_r_state = JXCP_R_INITIALIZATION_STATE;
 	// Set Parameters
 	// Mode
-	jxcp_s->Set_Parameters.Mode = NORMAL_MOVE_MODE;
+	jxcp_s->Set_Parameters.Mode = CYCLE_MOVE_MODE;
 	// Start/Stop
 	jxcp_s->Set_Parameters.Start = 0;
 	jxcp_s->Set_Parameters.Stop  = 0;
